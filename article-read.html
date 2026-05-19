@@ -41,7 +41,7 @@
           <ol>
             <li><a href="index.html">Home</a></li>
             <li><a href="articles.html">Articles</a></li>
-            <li><a href="article-details.html">Article Details</a></li>
+            <li><a href="article-details.html?id=1">Article Details</a></li>
             <li class="current">Read</li>
           </ol>
         </nav>
@@ -50,50 +50,57 @@
 
     <!-- Article Read Section -->
     <div class="container py-5">
-      <a href="article-details.html" class="btn btn-outline-light mb-4">&larr; Back to Articles</a>
+      <!-- <a href="article-details.html?id=1" class="btn btn-outline-light mb-4">&larr; Back to Articles</a> -->
+      <a href="javascript:history.back()"
+     class="btn btn-outline-light mb-4">
+     &larr; Back to Articles
+  </a>
 
       <!-- Header -->
-      <div class="text-center mb-4">
-        <img src="media/sub_articles/Programming_desktop_wallpaper_-_Java_logo.jpeg"
-             class="img-fluid rounded-4 mb-3"
-             alt="Introduction to Django Framework"
-             style="max-height: 200px; width: 100%; object-fit: cover;">
-        <h2 class="fw-bold">Introduction to Django Framework</h2>
-        <div class="d-flex justify-content-center align-items-center gap-2 text-secondary small">
-          <img src="media/authors/profile-pic.png" style="width: 40px; height: 40px;" class="rounded-circle" alt="Author">
-          <span>Subash Dhami &nbsp;•&nbsp; Jan 14, 2025 &nbsp;•&nbsp; 5 min read &nbsp;•&nbsp; 120 views</span>
+      <!-- Dynamic Header -->
+         <div class="text-center mb-4">
+
+          <img id="article-image"
+              class="img-fluid rounded-4 mb-3"
+              style="max-height: 250px;
+                      width: 100%;
+                      object-fit: cover;">
+
+          <h2 id="article-title"
+              class="fw-bold">
+          </h2>
+
+          <div class="d-flex justify-content-center align-items-center gap-2 text-secondary small">
+
+            <img src="media/authors/profile-pic.png"
+                style="width:40px; height:40px;"
+                class="rounded-circle">
+
+            <span id="article-meta"></span>
+
+          </div>
+
         </div>
-      </div>
 
       <!-- Full Content -->
-      <div class="bg-dark p-4 rounded-4 border border-secondary text-light">
-        <p>Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel.</p>
+      <!-- Dynamic Content -->
+        <div class="container py-5">
 
-        <h4 class="mt-4">Why Django?</h4>
-        <p>Django follows the MTV (Model-Template-View) architectural pattern and includes dozens of extras you can use to handle common web development tasks. Django takes security seriously and helps developers avoid many common security mistakes, such as SQL injection, cross-site scripting, cross-site request forgery and clickjacking.</p>
+          <img id="article-image-full"
+          class="img-fluid rounded-4 mb-3"
+          style="max-height:200px; width:100%; object-fit:cover;">
 
-        <h4 class="mt-4">Getting Started</h4>
-        <p>To install Django, you can use pip:</p>
-        <pre class="bg-black text-success p-3 rounded"><code>pip install django
-django-admin startproject myproject
-cd myproject
-python manage.py runserver</code></pre>
+          <h2 id="article-title-full" class="fw-bold mb-3"></h2>
 
-        <h4 class="mt-4">Django Project Structure</h4>
-        <p>A typical Django project consists of multiple apps. Each app is a Python package that follows certain conventions. Django provides a utility that automatically generates the basic directory structure of an app, so you can focus on writing code rather than creating directories.</p>
+            <div id="article-meta-full"
+                class="text-secondary mb-4">
+            </div>
 
-        <ul>
-          <li><strong>models.py</strong> – Define your data models</li>
-          <li><strong>views.py</strong> – Handle request/response logic</li>
-          <li><strong>urls.py</strong> – URL routing configuration</li>
-          <li><strong>templates/</strong> – HTML templates</li>
-          <li><strong>static/</strong> – CSS, JS, and image files</li>
-        </ul>
+            <div id="article-content"
+                class="bg-dark p-4 rounded-4 border border-secondary text-light">
+            </div>
 
-        <h4 class="mt-4">Conclusion</h4>
-        <p>Django is a powerful and versatile framework that can be used to build virtually any type of website. It's particularly well-suited to building complex, database-driven websites. Django has a strong community and excellent documentation, making it a great choice for both beginners and experienced developers.</p>
-      </div>
-    </div>
+        </div>
     <!-- End Full Content -->
 
     <!-- Related Articles Section -->
@@ -101,46 +108,11 @@ python manage.py runserver</code></pre>
       <h4 class="fw-bold mb-4 text-center">Related Articles</h4>
       <div class="row g-4">
 
-        <div class="col-md-4">
-          <a href="article-read.html?id=2" class="text-decoration-none text-light">
-            <div class="card bg-dark border-0 shadow-sm rounded-4 h-100">
-              <img src="media/sub_articles/1736830082607.jpg" class="card-img-top rounded-top-4" alt="Django Models" style="height: 200px; object-fit: cover;">
-              <div class="card-body">
-                <h6 class="fw-bold">Understanding Django Models &amp; ORM</h6>
-                <small class="text-secondary">Jan 20, 2025 &nbsp;•&nbsp; 7 min read</small>
-                <p class="small mb-0 text-secondary mt-2">Learn how Django's ORM helps you interact with your database using Python code...</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-4">
-          <a href="article-read.html?id=3" class="text-decoration-none text-light">
-            <div class="card bg-dark border-0 shadow-sm rounded-4 h-100">
-              <img src="media/sub_articles/R.png" class="card-img-top rounded-top-4" alt="Django Views" style="height: 200px; object-fit: cover;">
-              <div class="card-body">
-                <h6 class="fw-bold">Django Views &amp; URL Routing</h6>
-                <small class="text-secondary">Feb 01, 2025 &nbsp;•&nbsp; 6 min read</small>
-                <p class="small mb-0 text-secondary mt-2">Master Django views and URL routing for clean, maintainable web applications...</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-md-4">
-          <a href="article-read.html?id=4" class="text-decoration-none text-light">
-            <div class="card bg-dark border-0 shadow-sm rounded-4 h-100">
-              <img src="media/sub_articles/download.png" class="card-img-top rounded-top-4" alt="Django Templates" style="height: 200px; object-fit: cover;">
-              <div class="card-body">
-                <h6 class="fw-bold">Django Templates System</h6>
-                <small class="text-secondary">Feb 15, 2025 &nbsp;•&nbsp; 4 min read</small>
-                <p class="small mb-0 text-secondary mt-2">Explore Django's powerful template engine for building dynamic HTML pages...</p>
-              </div>
-            </div>
-          </a>
+        <div class="row g-4" id="related-articles">
         </div>
 
       </div>
+    </div>
     </div>
     <!-- /Related Articles Section -->
 
@@ -170,6 +142,7 @@ python manage.py runserver</code></pre>
   <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="static/js/main.js"></script>
+  <script src="static/js/article-read.js"></script>
 
 </body>
 </html>
