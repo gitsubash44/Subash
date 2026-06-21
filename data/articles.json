@@ -79,9 +79,9 @@
         "date": "2026-05-18",
         "readTime": "7 min read",
         "views": "222",
-        "image": "https://drive.google.com/drive/folders/1PywuIApMoySCenojkkqi3uIxaq3JtqbE?usp=drive_link",
+        "image": "media/articles/profile-pic.png",
         "description": "Exams Syllabus",
-        "content": " <a href=\"https://drive.google.com/drive/folders/1PywuIApMoySCenojkkqi3uIxaq3JtqbE?usp=drive_link\"> Click to view syllabus </a>, <br> <p> https://drive.google.com/drive/folders/1PywuIApMoySCenojkkqi3uIxaq3JtqbE?usp=drive_link </p> "
+        "content": "\n\n        <a href=\"https://drive.google.com/drive/folders/1PywuIApMoySCenojkkqi3uIxaq3JtqbE?usp=drive_link\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"display:inline-block;padding:14px 22px;background:#2563eb;color:white;text-decoration:none;border-radius:14px;font-family:Arial,sans-serif;font-size:18px;font-weight:600;box-shadow:0 6px 18px rgba(37,99,235,.25);transition:.3s ease;\">\n          📘 View Course Syllabus → <span style=\"display:block;font-size:13px;font-weight:400;opacity:.9;\">Open in Google Drive</span>\n        </a>\n        "
       }
     ]
   }
