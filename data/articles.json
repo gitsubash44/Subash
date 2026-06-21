@@ -69,8 +69,8 @@
 
   {
     "id": 3,
-    "category": "Java Tutorial",
-    "image": "media/articles/java.jpeg",
+    "category": "Exam Syllabus",
+    "image": "media/articles/profile-pic.png",
     "posts": [
       {
         "id": 301,
