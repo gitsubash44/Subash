@@ -81,7 +81,7 @@
         "views": "222",
         "image": "https://drive.google.com/drive/folders/1PywuIApMoySCenojkkqi3uIxaq3JtqbE?usp=drive_link",
         "description": "Exams Syllabus",
-        "content": " <p> https://drive.google.com/drive/folders/1PywuIApMoySCenojkkqi3uIxaq3JtqbE?usp=drive_link </p> "
+        "content": " <a href=\"https://drive.google.com/drive/folders/1PywuIApMoySCenojkkqi3uIxaq3JtqbE?usp=drive_link\"> Click to view syllabus </a>, <br> <p> https://drive.google.com/drive/folders/1PywuIApMoySCenojkkqi3uIxaq3JtqbE?usp=drive_link </p> "
       }
     ]
   }
