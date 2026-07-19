@@ -24,7 +24,8 @@
   <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="static/css/main.css" rel="stylesheet">
+  <link rel="preload" href="static/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="static/css/main.css" rel="stylesheet"></noscript>
 </head>
 
 <body class="index-page">
@@ -93,7 +94,7 @@
               <div class="hero-visual">
                 <div class="profile-container">
                   <div class="profile-background"></div>
-                  <img src="static/img/profile/subash dhami.png" alt="Subash Dhami" class="profile-image">
+                  <img src="static/img/profile/subash dhami.png" alt="Subash Dhami" class="profile-image" loading="lazy" decoding="async">
                 </div>
               </div>
             </div>
@@ -113,7 +114,7 @@
             <div class="profile-card">
               <div class="profile-header">
                 <div class="profile-image">
-                  <img src="media/profile/subash dhami.png" alt="Profile Image" class="img-fluid">
+                  <img src="media/profile/subash dhami.png" alt="Profile Image" class="img-fluid" loading="lazy" decoding="async">
                 </div>
                 <div class="profile-badge" style="position: absolute; right: 112px;">
                   <i class="bi bi-patch-check-fill" style="color: blue; font-size: 1.2rem;"></i>
@@ -268,44 +269,44 @@
               <div class="skills-grid d-flex flex-wrap justify-content-center">
 
                 <div class="skill-card m-3 text-center" style="background: #181818; border-radius: 16px; box-shadow: 0 4px 32px rgba(0,0,0,0.25); width: 220px; padding: 35px;">
-                  <img src="media/skills/html.png" alt="HTML" style="width:144px; height: 144px; object-fit:contain;">
+                  <img src="media/skills/html.png" alt="HTML" style="width:144px; height: 144px; object-fit:contain;" loading="lazy" decoding="async">
                   <div class="mt-3" style="color:#fff; font-size:1.1rem;">HTML</div>
                 </div>
 
                 <div class="skill-card m-3 text-center" style="background: #181818; border-radius: 16px; box-shadow: 0 4px 32px rgba(0,0,0,0.25); width: 220px; padding: 35px;">
-                  <img src="media/skills/th.webp" alt="Css" style="width:144px; height: 144px; object-fit:contain;">
+                  <img src="media/skills/th.webp" alt="Css" style="width:144px; height: 144px; object-fit:contain;" loading="lazy" decoding="async">
                   <div class="mt-3" style="color:#fff; font-size:1.1rem;">CSS</div>
                 </div>
 
                 <div class="skill-card m-3 text-center" style="background: #181818; border-radius: 16px; box-shadow: 0 4px 32px rgba(0,0,0,0.25); width: 220px; padding: 35px;">
-                  <img src="media/skills/OIP_CPW76j2.webp" alt="Bootstrap" style="width:144px; height: 144px; object-fit:contain;">
+                  <img src="media/skills/OIP_CPW76j2.webp" alt="Bootstrap" style="width:144px; height: 144px; object-fit:contain;" loading="lazy" decoding="async">
                   <div class="mt-3" style="color:#fff; font-size:1.1rem;">BOOTSTRAP</div>
                 </div>
 
                 <div class="skill-card m-3 text-center" style="background: #181818; border-radius: 16px; box-shadow: 0 4px 32px rgba(0,0,0,0.25); width: 220px; padding: 35px;">
-                  <img src="media/skills/javascripts.webp" alt="Javascripts" style="width:144px; height: 144px; object-fit:contain;">
+                  <img src="media/skills/javascripts.webp" alt="Javascripts" style="width:144px; height: 144px; object-fit:contain;" loading="lazy" decoding="async">
                   <div class="mt-3" style="color:#fff; font-size:1.1rem;">JAVASCRIPT</div>
                 </div>
 
 
 
                 <div class="skill-card m-3 text-center" style="background: #181818; border-radius: 16px; box-shadow: 0 4px 32px rgba(0,0,0,0.25); width: 220px; padding: 35px;">
-                  <img src="media/skills/OIP.webp" alt="Java" style="width:144px; height: 144px; object-fit:contain;">
+                  <img src="media/skills/OIP.webp" alt="Java" style="width:144px; height: 144px; object-fit:contain;" loading="lazy" decoding="async">
                   <div class="mt-3" style="color:#fff; font-size:1.1rem;">Java</div>
                 </div>
 
                 <div class="skill-card m-3 text-center" style="background: #181818; border-radius: 16px; box-shadow: 0 4px 32px rgba(0,0,0,0.25); width: 220px; padding: 35px;">
-                  <img src="media/skills/download.webp" alt="Django" style="width:144px; height: 144px; object-fit:contain;">
+                  <img src="media/skills/download.webp" alt="Django" style="width:144px; height: 144px; object-fit:contain;" loading="lazy" decoding="async">
                   <div class="mt-3" style="color:#fff; font-size:1.1rem;">DJANGO</div>
                 </div>
 
                 <div class="skill-card m-3 text-center" style="background: #181818; border-radius: 16px; box-shadow: 0 4px 32px rgba(0,0,0,0.25); width: 220px; padding: 35px;">
-                  <img src="media/skills/OIP_1.webp" alt="Python" style="width:144px; height: 144px; object-fit:contain;">
+                  <img src="media/skills/OIP_1.webp" alt="Python" style="width:144px; height: 144px; object-fit:contain;" loading="lazy" decoding="async">
                   <div class="mt-3" style="color:#fff; font-size:1.1rem;">PYTHON</div>
                 </div>
 
                 <div class="skill-card m-3 text-center" style="background: #181818; border-radius: 16px; box-shadow: 0 4px 32px rgba(0,0,0,0.25); width: 220px; padding: 35px;">
-                  <img src="media/skills/jupyter.webp" alt="Jupyter" style="width:144px; height: 144px; object-fit:contain;">
+                  <img src="media/skills/jupyter.webp" alt="Jupyter" style="width:144px; height: 144px; object-fit:contain;" loading="lazy" decoding="async">
                   <div class="mt-3" style="color:#fff; font-size:1.1rem;">JUPYTER</div>
                 </div>
 
@@ -347,7 +348,7 @@
 
                 <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
                   <div class="portfolio-wrap">
-                    <img src="media/portfolio/2.png" class="img-fluid" alt="A to Z Project" loading="lazy" style="height:220px;object-fit:cover;">
+                    <img src="media/portfolio/2.png" class="img-fluid" alt="A to Z Project" loading="lazy" decoding="async" style="height:220px;object-fit:cover;">
                     <div class="portfolio-info">
                       <div class="content">
                         <span class="category">Web Development</span>
@@ -362,7 +363,7 @@
 
                 <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
                   <div class="portfolio-wrap">
-                    <img src="media/portfolio/1.png" class="img-fluid" alt="Web Develpment" loading="lazy" style="height:220px;object-fit:cover;">
+                    <img src="media/portfolio/1.png" class="img-fluid" alt="Web Develpment" loading="lazy" decoding="async" style="height:220px;object-fit:cover;">
                     <div class="portfolio-info">
                       <div class="content">
                         <span class="category">Design</span>
@@ -377,7 +378,7 @@
 
                 <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
                   <div class="portfolio-wrap">
-                    <img src="media/portfolio/3.png" class="img-fluid" alt="Web Project" loading="lazy" style="height:220px;object-fit:cover;">
+                    <img src="media/portfolio/3.png" class="img-fluid" alt="Web Project" loading="lazy" decoding="async" style="height:220px;object-fit:cover;">
                     <div class="portfolio-info">
                       <div class="content">
                         <span class="category">Web Development</span>
@@ -392,7 +393,7 @@
 
                 <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-app">
                   <div class="portfolio-wrap">
-                    <img src="media/portfolio/4.png" class="img-fluid" alt="App Project" loading="lazy" style="height:220px;object-fit:cover;">
+                    <img src="media/portfolio/4.png" class="img-fluid" alt="App Project" loading="lazy" decoding="async" style="height:220px;object-fit:cover;">
                     <div class="portfolio-info">
                       <div class="content">
                         <span class="category">App</span>
@@ -595,19 +596,19 @@
   </div>
 
   <!-- Vendor JS Files -->
-  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="static/vendor/php-email-form/validate.js"></script>
-  <script src="static/vendor/aos/aos.js"></script>
-  <script src="static/vendor/typed.js/typed.umd.js"></script>
-  <script src="static/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="static/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="static/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="static/vendor/php-email-form/validate.js" defer></script>
+  <script src="static/vendor/aos/aos.js" defer></script>
+  <script src="static/vendor/typed.js/typed.umd.js" defer></script>
+  <script src="static/vendor/purecounter/purecounter_vanilla.js" defer></script>
+  <script src="static/vendor/waypoints/noframework.waypoints.js" defer></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
+  <script src="static/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js" defer></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js" defer></script>
 
   <!-- Main JS File -->
-  <script src="static/js/main.js"></script>
+  <script src="static/js/main.js" defer></script>
 
   <script>
     function handleContactSubmit() {

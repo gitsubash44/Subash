@@ -1,4 +1,5 @@
 {
     "workbench.activityBar.compact": false,
-    "workbench.activityBar.autoHide": true
+    "workbench.activityBar.autoHide": true,
+    "claudeCodeChat.permissions.yoloMode": false
 }
