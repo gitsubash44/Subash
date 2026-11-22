@@ -24,12 +24,20 @@ export async function onRequestPost({ request, env }) {
       return json({ error: "Please submit the form using the website." }, 415);
     }
 
-    const contentLength = Number(request.headers.get("Content-Length") || 0);
-    if (contentLength > 12000) {
+    const rawBody = await request.text();
+    if (new TextEncoder().encode(rawBody).byteLength > 12000) {
       return json({ error: "Your message is too large." }, 413);
     }
 
-    const data = await request.json();
+    let data;
+    try {
+      data = JSON.parse(rawBody);
+    } catch {
+      return json({ error: "Invalid form submission." }, 400);
+    }
+    if (!data || typeof data !== "object" || Array.isArray(data)) {
+      return json({ error: "Invalid form submission." }, 400);
+    }
     const name = String(data.name || "").trim();
     const email = String(data.email || "").trim();
     const subject = String(data.subject || "").trim();
